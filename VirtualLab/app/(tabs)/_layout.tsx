@@ -8,6 +8,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: '#2563eb',
+        headerShown: false,
       }}
     >
       <Tabs.Screen
@@ -18,7 +19,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
           ),
-          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="Quiz"
+        options={{
+          title: 'Quiz',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'document-text' : 'document-text-outline'} color={color} size={24} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -29,7 +38,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
           ),
-          headerShown: false,
         }}
       />
     </Tabs>

@@ -1,26 +1,47 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, Alert } from 'react-native';
+import { View, Text, StyleSheet, Button, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 type Props = {
   title: string;
   description: string;
+  link?: any;
+  buttonText?: string;
+  questionCount?: number;
+  duration?: string;
 };
 
 const Card = (props: Props) => {
-  const handlePress = () => {
-    Alert.alert('Button Pressed', 'You have started the simulation!');
- };
   return (
     <View style={styles.card}>
       <Text style={styles.title}>{props.title}</Text>
       <Text style={styles.description}>{props.description}</Text>
-      <View style={{ marginTop: 10 }}>
-        <Button
-          title="Mulai Simulasi"
-          onPress={handlePress}
-          color="#2563eb"
-        />
-      </View>
+      
+      {/* Metadata */}
+      {(props.questionCount || props.duration) && (
+        <View style={styles.metaContainer}>
+          {props.questionCount && (
+            <View style={styles.metaItem}>
+              <Text style={styles.metaIcon}>📝</Text>
+              <Text style={styles.metaText}>{props.questionCount} Soal</Text>
+            </View>
+          )}
+          {props.duration && (
+            <View style={styles.metaItem}>
+              <Text style={styles.metaIcon}>⏱️</Text>
+              <Text style={styles.metaText}>{props.duration}</Text>
+            </View>
+          )}
+        </View>
+      )}
+      
+      {props.link && (
+        <Link href={props.link as any} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>{props.buttonText || 'Mulai Simulasi'}</Text>
+          </Pressable>
+        </Link>
+      )}
     </View>
   );
 };
@@ -52,6 +73,38 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     width: '100%',
     textAlign: 'center',
+  },
+  metaContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 5,
+    marginBottom: 5,
+  },
+  metaItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 10,
+  },
+  metaIcon: {
+    fontSize: 14,
+    marginRight: 5,
+  },
+  metaText: {
+    fontSize: 13,
+    color: '#64748b',
+  },
+  button: {
+    backgroundColor: '#2563eb',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 6,
+    marginTop: 10,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 15,
+    fontWeight: '600',
   }
 });
 

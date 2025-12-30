@@ -11,10 +11,22 @@ export default function App() {
     <SafeAreaView style={{ flex: 1, backgroundColor: '#2563eb' }}>
       <Header title="Virtual Lab Fisika" />
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.contentContainer}>
-        <TitleCard title="Selamat Datang di Virtual Lab Fisika" description="Eksplorasi konsep fisika melalui simulasi interaktif" />
-        <Card title="Penjumlahan Vektor" description="Pelajari cara menjumlahkan vektor menggunakan metode poligon dan jajaran genjang" />
-        <Card title="Gerak Parabola" description="Simulasi gerak proyektil dan analisis lintasan parabola dengan berbagai sudut elevasi" />
-        <Card title="Hukum Newton" description="Eksplorasi hukum newton II tentang gerak dan gaya yang memengaruhi pergerakan objek" />
+        <TitleCard title="Selamat Datang di Virtual Lab Fisika!" description="Eksplorasi konsep fisika melalui simulasi interaktif" />
+        <Card 
+          title="Penjumlahan Vektor" 
+          description="Pelajari cara menjumlahkan vektor menggunakan metode poligon dan jajaran genjang" 
+          link="/materi/resultan-vektor"
+        />
+        <Card 
+          title="Gerak Parabola" 
+          description="Simulasi gerak proyektil dan analisis lintasan parabola dengan berbagai sudut elevasi" 
+          link="/materi/gerak-parabola"
+        />
+        <Card 
+          title="Hukum Newton" 
+          description="Eksplorasi hukum newton II tentang gerak dan gaya yang memengaruhi pergerakan objek" 
+          link="/materi/hukum-newton"
+        />
       </ScrollView>
     </SafeAreaView>
   );

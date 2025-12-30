@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 type Props = {
   title: string;
   description: string;
+  buttonText?: string;
+  buttonLink?: any;
 };
 
 const TitleCard = (props: Props) => {
@@ -11,6 +14,13 @@ const TitleCard = (props: Props) => {
     <View style={styles.card}>
       <Text style={styles.title}>{props.title}</Text>
       <Text style={styles.description}>{props.description}</Text>
+      {props.buttonText && props.buttonLink && (
+        <Link href={props.buttonLink as any} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>{props.buttonText}</Text>
+          </Pressable>
+        </Link>
+      )}
     </View>
   );
 };
@@ -19,7 +29,6 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
     width: '100%',
-    height: 150,
     paddingVertical: 20,
     paddingHorizontal: 25,
     marginVertical: 10,
@@ -38,11 +47,26 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   description: {
-    fontSize: 18,
+    fontSize: 14,
     color: '#555',
-    marginTop: 10,
+    marginTop: 5,
+    marginBottom: 10,
     textAlign: 'center',
     width: '100%',
+  },
+  button: {
+    backgroundColor: '#2563eb',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 6,
+    marginTop: 10,
+    alignItems: 'center',
+    width: '100%',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 15,
+    fontWeight: '600',
   }
 });
 
