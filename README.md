@@ -1,4 +1,3 @@
-
 # II3140 - Pengembangan Aplikasi dan Web Mobile
 ## Virtual Lab: Fisika
 
@@ -73,5 +72,5 @@ Virtual Lab:Fisika dapat diakses dan digunakan melalui:
 
 ### Ubah Password
 <p align="center">
-<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/a256de54-0bb4-4aa6-b89f-93967401ee30" />
+<img width="293.25" height="600" alt="image" src="https://github.com/user-attachments/assets/a256de54-0bb4-4aa6-b89f-93967401ee30" />
 </p>
