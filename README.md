@@ -25,19 +25,33 @@ Virtual Lab:Fisika dapat diakses dan digunakan melalui:
 
 ## Program Screenshots
 ### Register Page
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/1a1ae331-c2ec-45da-9876-2b30120b161a" />
 
 ### Login Page
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/d69ab9d0-b6e9-421d-b87b-3ed64a69a8eb" />
 
 ### Beranda
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/b2367ffa-35e7-4d3b-bd6d-60d8a45155db" />
 
 ### Contoh Materi
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/8482025c-98af-4275-9848-96043dc6c928" />
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/60fe13f5-f6d5-4933-bdf9-fd79dd488f00" />
 
 ### Contoh Virtual Lab
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/26b122ff-dccc-4b58-bf93-fefca8fa7b5d" />
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/887aa364-720d-42b2-9b70-6eb227c141a9" />
 
 ### Menu Quiz
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/5f12adaa-b616-47e1-93af-378abada77ca" />
 
 ### Contoh Halaman Quiz
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/c62f0e72-7539-43dd-824e-a97aad071925" />
 
 ### Riwayat Quiz
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/e6660925-5f1e-4756-bd6e-65d210a4b808" />
 
 ### Pengaturan Profil Akun
+<img width="540" height="1306" alt="image" src="https://github.com/user-attachments/assets/a0ee1b0e-676c-4bc4-a18b-e3501856d9a5" />
+
+### Ubah Password
+<img width="782" height="1600" alt="image" src="https://github.com/user-attachments/assets/a256de54-0bb4-4aa6-b89f-93967401ee30" />
